@@ -1,1 +1,6 @@
-course - Complete Playwright test automation course with TypeScript. Best practices, API testing, Page Objects, Advanced featuresß
+course - Complete Playwright test automation course with TypeScript. Best practices, API testing, Page Objects, Advanced features
+
+Commands to push new updates: 
+git add . - Stages all your changed files
+git commit -m "message" - Commits with a description of what you changed
+git push - Pushes to GitHub
