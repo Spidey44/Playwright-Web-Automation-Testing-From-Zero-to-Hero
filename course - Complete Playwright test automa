@@ -4,3 +4,20 @@ Commands to push new updates:
 git add . - Stages all your changed files
 git commit -m "message" - Commits with a description of what you changed
 git push - Pushes to GitHub
+
+Install playwright
+npm init playwright@latest - Tyscript as default language.
+Node folder => library and components
+TEst Folder = test file. convention specs.ts.
+.gitignote folder = ignre all uncomitted files
+pkge.jason = describe project and script and libraries
+playwright.config.ts = settings for the playwrtight (browsers...)
+
+ Cmmands
+npx playwright test =>  run test
+npx playwright show-report => show report in html
+npx playwright test --project=chromium => run chrome tests only
+npx playwright test example.spec.ts --project=chromium  => run one file only tests only
+npx playwright test -g "has title" --project=chromium  => run one test only tests only
+test.skip => ignore the test
+test.only => ignore other tests

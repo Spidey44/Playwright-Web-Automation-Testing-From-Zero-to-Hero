@@ -1,0 +1,23 @@
+{
+  "name": "playwright-course---web-automation-testing-from-zero-to-hero",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Spidey44/Playwright-Web-Automation-Testing-From-Zero-to-Hero.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Spidey44/Playwright-Web-Automation-Testing-From-Zero-to-Hero/issues"
+  },
+  "homepage": "https://github.com/Spidey44/Playwright-Web-Automation-Testing-From-Zero-to-Hero#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.58.2",
+    "@types/node": "^25.2.1"
+  }
+}
