@@ -13,7 +13,7 @@ TEst Folder = test file. convention specs.ts.
 pkge.jason = describe project and script and libraries
 playwright.config.ts = settings for the playwrtight (browsers...)
 
- Cmmands
+Cmmands
 npx playwright test =>  run test
 npx playwright show-report => show report in html
 npx playwright test --project=chromium => run chrome tests only
@@ -21,3 +21,9 @@ npx playwright test example.spec.ts --project=chromium  => run one file only tes
 npx playwright test -g "has title" --project=chromium  => run one test only tests only
 test.skip => ignore the test
 test.only => ignore other tests
+npx playwright test --ui  => for debugging with screenshots only
+npx playwright test --trace on => report with trqce section
+npx playwright test --debug  => execute test step by step on clic with brower
+
+
+Test structure
