@@ -26,4 +26,7 @@ npx playwright test --trace on => report with trqce section
 npx playwright test --debug  => execute test step by step on clic with brower
 
 
-Test structure
+Test structure with Hooks
+optimize code flow, group, and combine test
+=> .describe group tests case into suite
+=> .after/before all(not good practice)/each
