@@ -30,3 +30,9 @@ Test structure with Hooks
 optimize code flow, group, and combine test
 => .describe group tests case into suite
 => .after/before all(not good practice)/each
+
+Locator
+Action on a locator only if unique. Otherwise use .first()
+USe client facing locator philosophy
+REsue a loator inside a constant
+
