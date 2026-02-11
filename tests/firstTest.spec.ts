@@ -94,7 +94,7 @@ test('locating child elements', async ({ page }) => {
   await page.locator('nb-card', { has: page.locator('#inputEmail1') }).getByRole('textbox', { name: "Email" }).click()
 })
 
-test.only('Reusing the locators', async ({ page }) => {
+test('Reusing the locators', async ({ page }) => {
      await page.goto('https://testpages.eviltester.com/pages/forms/text-inputs/')
   // Localiser le formulaire parent par son ID
   const textInputsForm = page.locator('form#ajax-submitted-form')
@@ -122,5 +122,29 @@ test.only('Reusing the locators', async ({ page }) => {
   await expect (emailField).toHaveValue('test@example.com')
   await submitButton.click()
   
+
+})
+
+test.only('extracting values', async ({ page }) => {
+
+  await page.goto('https://testpages.eviltester.com/pages/forms/text-inputs/')
+
+  // single test value
+  const basicForm = page.locator('#multi-select-input').filter({ hasText: "Multiple Select" })
+  const buttonText = await basicForm.locator('button').textContent()
+  expect(buttonText).toEqual('Submit')
+
+  // all text values
+  const allRadioButtonsLabels = await page.locator('#multi-select-input').allTextContents()
+  expect(allRadioButtonsLabels).toContain("Option 1")
+
+  // input value
+  const emailField = basicForm.getByRole('textbox', { name: "Text Area" })
+  await emailField.fill('test@test.com')
+  const emailValue = await emailField.inputValue()
+  expect(emailValue).toEqual('test@test.com')
+
+  // const placeholderValue = await emailField.getAttribute('placeholder')
+  // expect(placeholderValue).toEqual('Email')
 
 })
